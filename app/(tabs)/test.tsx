@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { Image, StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
+import FastImage from 'react-native-fast-image';
 import MapView, { Marker, type LatLng, type MapPressEvent } from 'react-native-maps';
 
 const SF_REGION = {
@@ -21,9 +22,10 @@ export default function TestScreen() {
       {markerCoord && (
         <Marker coordinate={markerCoord}>
           <View style={styles.marker}>
-            <Image
+            <FastImage
               source={{ uri: 'https://reactnative.dev/img/tiny_logo.png' }}
               style={styles.logo}
+              resizeMode={FastImage.resizeMode.contain}
             />
             <Text style={styles.price}>$4.29</Text>
           </View>
