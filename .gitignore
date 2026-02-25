@@ -38,6 +38,7 @@ yarn-error.*
 
 app-example
 
-# generated native folders
-/ios
-/android
+# generated native folders - tracked because we have custom native modifications
+# (Google Maps API key, MapMarker.java patch)
+# /ios
+# /android
