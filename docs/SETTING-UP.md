@@ -79,7 +79,6 @@ npx expo run:android
 
 | react-native-maps version | `<Image>` (Fresco) in Marker | `<FastImage>` (Glide) in Marker |
 |---|---|---|
-| v1.20.1 | Blank | Blank |
 | v1.27.1 | Works | Blank |
 
 - v1.27.1 fixed the issue for React Native's built-in `<Image>` (Fresco-backed)
